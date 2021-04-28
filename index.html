@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <title>Pod request access landing page</title>
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <img class="page-header__logo" src="./img/logo.svg" width="135" height="56" alt="Pod logo">
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Pod request access landing page</h1>
+    <p class="page-main__title"><span class="page-main__title--accent">Publish your podcasts </span>everywhere.</p>
+
+    <p class="page-main__description">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+      Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+    <ul class="partners__list">
+      <li><img class="partners__logo partners__logo--spotify" src="./img/icon-spotify.svg" width="56" height="17" alt="Spotify logo"></li>
+      <li><img class="partners__logo partners__logo--apple-podcast" src="./img/icon-apple-podcast.svg" width="45" height="17" alt="Apple podcast logo"></li>
+      <li><img class="partners__logo partners__logo--google-podcasts" src="./img/icon-google-podcasts.svg" width="73" height="11" alt="Google podcasts logo"></li>
+      <li><img class="partners__logo partners__logo--pocket-podcasts" src="./img/icon-pocket-podcasts.svg" width="77" height="15" alt="Pocket podcasts logo"></li>
+    </ul>
+    <form class="form" method="POST" action="#">
+      <input class="form__email" type="text" placeholder="Email address" aria-label="Email input">
+      <button class="form__button" type="submit">Request access</button>
+    </form>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
