@@ -84,6 +84,7 @@ html {
 @media (min-width: 1150px) {
   .page-body {
     padding-left: 165px;
+    padding-bottom: 130px;
     background-image: url('../img/background-desktop.jpg');
     background-size: 886px 640px;
     background-position: right 2px top 130px;
