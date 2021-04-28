@@ -38,7 +38,7 @@ html {
   padding-left: 24px;
   padding-bottom: 94px;
   font-family: 'Chivo', sans-serif;
-  font-size: 400;
+  font-weight: 400;
   color: #ffffff;
   background: #121725 url('../img/background-mobile.png');
   background-blend-mode: normal;
@@ -83,9 +83,10 @@ html {
 
 @media (min-width: 1150px) {
   .page-body {
+    padding-left: 165px;
     background-image: url('../img/background-desktop.jpg');
     background-size: 886px 640px;
-    background-position: right 130px;
+    background-position: right 2px top 130px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -118,41 +119,39 @@ html {
 }
 
 .page-header {
-  margin-bottom: 57px;
-  padding-top: 43px;
+  margin-bottom: 55px;
+  padding-top: 61px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .page-header {
     text-align: left;
-    margin-bottom: 152px;
-    padding-top: 50px;
+    margin-bottom: 148px;
+    padding-top: 49px;
   }
 }
 
 @media (min-width: 1150px) {
   .page-header {
     text-align: left;
-    margin-bottom: 104px;
-    padding-top: 102px;
+    margin-bottom: 99px;
+    padding-top: 101px;
   }
 }
-/* .page-header__logo {
-
-} */
 
 .page-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .page-main {
     width: 635px;
-    padding-top: 93px;
+    padding-top: 95px;
     padding-right: 39px;
     align-items: flex-start;
     background-color: #121725;
@@ -162,8 +161,9 @@ html {
 
 @media (min-width: 1150px) {
   .page-main {
+    width: 723px;
     padding-top: 87px;
-    padding-right: 78px;
+    padding-right: 50px;
   }
 }
 
@@ -198,9 +198,9 @@ html {
 }
 
 .page-main__description {
-  max-width: 455px;
+  max-width: 445px;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   font-size: 15px;
   line-height: 25px;
   color: #c2cbe5;
@@ -208,7 +208,7 @@ html {
 
 @media (min-width: 768px) {
   .page-main__description {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     font-size: 18px;
     line-height: 28px;
   }
@@ -216,13 +216,12 @@ html {
 
 @media (min-width: 1150px) {
   .page-main__description {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 }
 
 .partners__list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   margin-bottom: 48px;
@@ -241,19 +240,49 @@ html {
 
 .partners__logo {
   display: block;
-  width: auto;
 }
 
 .partners__logo--spotify {
   margin-right: 23px;
 }
 
+@media (min-width: 768px) {
+  .partners__logo--spotify {
+    width: 96px;
+    height: 29px;
+    margin-right: 40px;
+  }
+}
+
 .partners__logo--apple-podcast {
   margin-right: 25px;
 }
 
+@media (min-width: 768px) {
+  .partners__logo--apple-podcast {
+    width: 78px;
+    height: 29px;
+    margin-right: 41px;
+  }
+}
+
 .partners__logo--google-podcasts {
   margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .partners__logo--google-podcasts {
+    width: 125px;
+    height: 17px;
+    margin-right: 27px;
+  }
+}
+
+@media (min-width: 768px) {
+  .partners__logo--pocket-podcasts {
+    width: 129px;
+    height: 26px;
+  }
 }
 
 .form {
@@ -324,6 +353,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 326px;
   height: 46px;
   padding: 0;
